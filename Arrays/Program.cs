@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -74,10 +75,15 @@ namespace Arrays
 
         static void Fire(int currentWeapon)
         {
-            if (ammo[currentWeapon] == 0)
+            if (ammo[currentWeapon] > 0)
             {
                 ammo[currentWeapon] = ammo[currentWeapon] - 1;
             }
+        }
+
+        static void Reload(int currentWeapon)
+        {
+            
         }
     }
 }
